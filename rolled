@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lonely Button</title>
+</head>
+<body>
+    <button id="lonelyButton">please call, I'm lonely 😢</button>
+
+    <script>
+        document.getElementById("lonelyButton").addEventListener("click", function() {
+            var phoneNumber = "tel:2484345508"; // Replace with your desired phone number
+            window.location.href = phoneNumber;
+        });
+    </script>
+</body>
+</html>
