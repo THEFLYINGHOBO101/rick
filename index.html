@@ -7,14 +7,32 @@
     <title>Lonely Button</title>
 </head>
 <body>
-    <button id="lonelyButton">please call, I'm lonely 😢</button>
+    <div id="content"></div>
 
     <script>
-        document.getElementById("lonelyButton").addEventListener("click", function() {
-            var phoneNumber = "tel:2484345508"; // Replace with your desired phone number
-            window.location.href = phoneNumber;
-        });
+        // Check if the user is on a mobile device
+        const isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+
+        if (isMobile) {
+            // Display a button for phone number
+            const phoneNumber = "tel:2484345508"; // Replace with your desired phone number
+            const phoneButton = document.createElement("button");
+            phoneButton.textContent = "please call me im lonly :((";
+            phoneButton.addEventListener("click", function() {
+                window.location.href = phoneNumber;
+            });
+            document.getElementById("content").appendChild(phoneButton);
+        } else {
+            // Display the YouTube video
+            const youtubeVideoId = "dQw4w9WgXcQ"; // Replace with the provided YouTube video ID
+            const youtubeIframe = document.createElement("iframe");
+            youtubeIframe.src = `https://www.youtube.com/embed/${youtubeVideoId}`;
+            youtubeIframe.width = "560";
+            youtubeIframe.height = "315";
+            document.getElementById("content").appendChild(youtubeIframe);
+        }
     </script>
 </body>
 </html>
+
 
