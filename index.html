@@ -9,6 +9,10 @@
 <body>
     <div id="content"></div>
 
+    <!-- Visitor Counter -->
+    <p>Number of visitors to this page:</p>
+    <img alt="Visitor counter" src="counter.php" />
+
     <script>
         // Check if the user is on a mobile device
         const isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
@@ -17,7 +21,7 @@
             // Display a button for phone number
             const phoneNumber = "tel:2484345508"; // Replace with your desired phone number
             const phoneButton = document.createElement("button");
-            phoneButton.textContent = "please call me im lonly :((";
+            phoneButton.textContent = "Call me!";
             phoneButton.addEventListener("click", function() {
                 window.location.href = phoneNumber;
             });
@@ -34,5 +38,6 @@
     </script>
 </body>
 </html>
+
 
 
