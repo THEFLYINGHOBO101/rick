@@ -1,5 +1,5 @@
 <?php
-require_once 'config.php';
+require_once 'https://raw.githubusercontent.com/THEFLYINGHOBO101/rick-rolled/main/config.php';
 
 $databaseFile = (isset($databaseFile)) ? $databaseFile : 'counter.sqlite';
 $visitorsPageTitle = (isset($visitorsPageTitle)) ? $visitorsPageTitle : 'Online Visitors';
